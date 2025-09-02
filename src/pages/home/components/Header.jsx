@@ -44,7 +44,7 @@ export function Header() {
 
         <div>
           <img
-            src=""/assets/resume/myphoto.jpg""
+            src="/assets/resume/myphoto.jpg"
             className="w-full rounded-image object-cover"
             alt="Relume placeholder image"
           />
