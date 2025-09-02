@@ -44,10 +44,11 @@ export function Header() {
 
         <div>
           <img
-            src="/assets/resume/myphoto.jpg"
-            className="w-full rounded-image object-cover"
-            alt="Relume placeholder image"
-          />
+  src="/assets/resume/myphoto.jpg"
+  className="w-full rounded-image object-cover"
+  alt="My photo"
+/>
+
         </div>
       </div>
     </section>
