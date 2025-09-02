@@ -2,11 +2,13 @@
 
 import React from "react";
 import { ReactTyped } from "react-typed";
+import Image from "next/image";
 
 export function Header() {
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center">
+        {/* Left Section */}
         <div>
           <h1 className="mb-2 text-3xl font-bold md:text-5xl lg:text-5xl">
             👋 Hello, I am <span className="text-primary">Sasanka Nimes</span>
@@ -42,15 +44,19 @@ export function Header() {
           </p>
         </div>
 
+        {/* Right Section - Profile Image */}
         <div>
-          <img
-  src="/assets/resume/myphoto.jpg"
-  className="w-full rounded-image object-cover"
-  alt="My photo"
-/>
-
+          <Image
+            src="/assets/resume/myphoto.jpg"
+            width={500}
+            height={500}
+            className="w-full rounded-2xl object-cover shadow-lg"
+            alt="My photo"
+            priority
+          />
         </div>
       </div>
     </section>
   );
 }
+
