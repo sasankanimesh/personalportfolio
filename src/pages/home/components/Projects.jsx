@@ -135,14 +135,6 @@ export function Projects() {
 
   return (
     <section id="Projects" className="px-[5%] py-10 md:py-14 lg:py-16">
-      <div className="container">
-        <div className="mb-12 text-center md:mb-18 lg:mb-20">
-          <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            My Projects
-          </h2>
-          <p className="md:text-md">A showcase of my skills and creations.</p>
-        </div>
-      </div>
       <div className="relative grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10">
         {/* IMAGE BLOCK */}
         <div className="sticky top-8 hidden h-[90vh] w-full lg:block overflow-hidden rounded-xl shadow-lg bg-gray-100">

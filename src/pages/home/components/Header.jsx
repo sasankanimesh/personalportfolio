@@ -2,7 +2,6 @@
 
 import React from "react";
 import { ReactTyped } from "react-typed";
-import Image from "next/image";
 
 export function Header() {
   return (

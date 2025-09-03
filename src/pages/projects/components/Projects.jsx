@@ -426,11 +426,13 @@ export function Projects() {
 
   return (
     <section id="projects" className="px-[5%] py-8 md:py-12 lg:py-14">
+      <h2 className="text-4xl font-bold text-center mb-8 md:mb-12">
+        My Projects
+      </h2>
+
       <div className="grid grid-cols-1 gap-6 md:gap-12 lg:gap-20">
         {projects.map((project, index) => {
-          // Generate the unique ID for the project
           const projectId = createSlug(project.heading);
-          // Pass the project data and the new ID to the card component
           return (
             <ProjectCard key={index} project={project} projectId={projectId} />
           );
