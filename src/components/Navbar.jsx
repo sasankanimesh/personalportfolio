@@ -4,6 +4,7 @@ import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FiDownload } from "react-icons/fi";
+import { Link } from "react-router-dom"; // <-- Import Link here
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -127,48 +128,56 @@ export function Navbar() {
           transition={{ duration: 0.4 }}
           className="overflow-hidden px-[5%] text-center lg:flex lg:items-center lg:justify-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
-          <a
-            href="/"
+          {/* Use React Router Link here for SPA navigation */}
+          <Link
+            to="/"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            onClick={() => useActive.toggleMobileMenu()}
           >
             Home
-          </a>
-          <a
-            href="/aboutme"
+          </Link>
+          <Link
+            to="/aboutme"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            onClick={() => useActive.toggleMobileMenu()}
           >
             About Me
-          </a>
-          <a
-            href="/projects"
+          </Link>
+          <Link
+            to="/projects"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            onClick={() => useActive.toggleMobileMenu()}
           >
             Projects
-          </a>
-          <a
-            href="/skills"
+          </Link>
+          <Link
+            to="/skills"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            onClick={() => useActive.toggleMobileMenu()}
           >
             Skills
-          </a>
-          <a
-            href="/education"
+          </Link>
+          <Link
+            to="/education"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            onClick={() => useActive.toggleMobileMenu()}
           >
             Education
-          </a>
-          <a
-            href="/certifications"
+          </Link>
+          <Link
+            to="/certifications"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            onClick={() => useActive.toggleMobileMenu()}
           >
             Certifications
-          </a>
-          <a
-            href="/contactme"
+          </Link>
+          <Link
+            to="/contactme"
             className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            onClick={() => useActive.toggleMobileMenu()}
           >
             Contact Me
-          </a>
+          </Link>
         </motion.div>
         <div className="hidden justify-self-end lg:block bg-black text-white">
           <a
