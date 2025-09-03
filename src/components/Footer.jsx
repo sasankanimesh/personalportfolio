@@ -8,6 +8,7 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -24,25 +25,25 @@ export function Footer() {
 
         <ul className="grid grid-flow-row grid-cols-1 items-start justify-center justify-items-center gap-6 md:grid-flow-col md:grid-cols-[max-content] md:justify-center md:justify-items-start">
           <li className="font-semibold">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="font-semibold">
-            <a href="/aboutme">About Me</a>
+            <Link to="/aboutme">About Me</Link>
           </li>
           <li className="font-semibold">
-            <a href="/projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li className="font-semibold">
-            <a href="/skills">Skills</a>
+            <Link to="/skills">Skills</Link>
           </li>
           <li className="font-semibold">
-            <a href="/education">Education</a>
+            <Link to="/education">Education</Link>
           </li>
           <li className="font-semibold">
-            <a href="/certifications">Certifications</a>
+            <Link to="/certifications">Certifications</Link>
           </li>
           <li className="font-semibold">
-            <a href="/contact">Contact</a>
+            <Link to="/contactme">Contact Me</Link>
           </li>
         </ul>
         <div className="flex items-start justify-start justify-items-center gap-x-3 lg:justify-self-end">

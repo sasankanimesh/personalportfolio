@@ -4,7 +4,7 @@ import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FiDownload } from "react-icons/fi";
-import { Link } from "react-router-dom"; // <-- Import Link here
+import { Link } from "react-router-dom";
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
